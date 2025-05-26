@@ -131,11 +131,9 @@ def list_cluster_examples(df_X, labels, df_text, n=5, random_state=42):
         display(
             sample.style.format(precision=3).set_table_styles(
                 [
-                    {"selector": "th", "props": [("max-width", "100px")]},
-                    {
-                        "selector": "td",
-                        "props": [("max-width", "100px"), ("white-space", "pre-wrap")],
-                    },
+                    {"selector": "th.col0", "props": [("min-width", "300px"), ("max-width", "300px")]},
+                    {"selector": "td.col0", "props": [("min-width", "300px"), ("max-width", "300px"), ("white-space", "pre-wrap")]},
+
                 ]
             )
         )
